@@ -13,312 +13,474 @@
         gtag('config', 'G-M33YKH8TSB');
     </script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="The Social Media Macroscope is an open-source science gateway from NCSA for social media data collection, analytics, and visualization. We welcome research collaborations.">
+    <meta name="author" content="National Center for Supercomputing Applications">
+    <meta property="og:title" content="Social Media Macroscope">
+    <meta property="og:description"
+          content="Open-source research software for social media data collection, analytics, and visualization.">
+    <meta property="og:image" content="https://smm.ncsa.illinois.edu/images/small-logo.png">
     <link rel="icon" href="images/favicon.ico">
 
     <title>Social Media Macroscope</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-
-    <!-- Custom styles for this template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap"
+          rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#tools">Tools <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.ncsa.illinois.edu/expertise/software-applications/"
-                       target="_blank">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#opensource">Contribute</a>
-                </li>
-            </ul>
-        </div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#top">
+            <img src="images/small-logo.png" alt="" width="32" height="32">
+            <span>Social Media Macroscope</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+                aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#collaborate">Collaborate</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#deployment">Self-host</a></li>
+            <li><a href="#opensource">Code</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="https://www.ncsa.illinois.edu/about/" target="_blank"
+                   rel="noopener">About</a></li>
+            <li><a class="btn btn-outline btn-sm" href="#contact">Contact</a></li>
+        </ul>
     </nav>
 </header>
 
-<main role="main">
+<main id="main">
 
-    <div class="header" data-ride="header">
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="images/header-left.png" alt="header-img" width="100%">
-            </div>
-            <div class="col-lg-6">
-                <div class="container header-caption">
-                    <h1>THE SOCIAL MEDIA MACROSCOPE</h1>
-                    <hr class="horizontal-divider">
-                    <p>Making Social Media Data, Analytics, and Visualization Tools accessible to researchers and
-                        students
-                        of all levels of expertise.</p>
-                    <p class="helper-text">
-                        <a href="mailto:smm@lists.illinois.edu" target="_blank" class="inline-link">Contact us</a> to
-                        explore collaborative
-                        opportunities and join our mission of enhancing and extending the capabilities of the social
-                        media
-                        macroscope tools, leveraging their adaptability with cloud environments and on-premises
-                        resources.</p>
-                    <a class="btn btn-lg btn-primary button-link" href="#tools" role="button">Get Started</a>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="kicker">National Center for Supercomputing Applications &middot; University of Illinois
+                    Urbana-Champaign</p>
+                <h1>The Social Media Macroscope</h1>
+                <p class="lead">
+                    An open-source science gateway that makes social media data, analytics, and visualization tools
+                    accessible to researchers and students of all levels of expertise.
+                </p>
+                <p>
+                    We are looking for collaborators to help enhance and extend the Social Media Macroscope, from
+                    joint research projects to deployments on cloud and on-premises infrastructure.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#collaborate">Explore collaboration</a>
+                    <a class="btn btn-outline" href="#publications">Read our publications</a>
                 </div>
             </div>
+            <figure class="hero-figure">
+                <img src="images/header-left.png" alt="Hands holding a phone showing social media apps"
+                     width="807" height="725">
+            </figure>
         </div>
+    </section>
+
+    <!-- STATUS -->
+    <div class="container">
+        <aside class="notice" role="note">
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z"/>
+            </svg>
+            <p>
+                <strong>Service status:</strong> the hosted SMM services, including the SMILE Playground and SMM
+                Clowder, are not currently available. All of the software remains open source and can be
+                <a href="#deployment">deployed on your own infrastructure</a>. If you would like to bring these
+                tools back into use for your research, <a href="#contact">get in touch</a>.
+            </p>
+        </aside>
     </div>
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!-- COLLABORATE -->
+    <section class="section" id="collaborate">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Collaborate</p>
+                <h2>Work with us</h2>
+                <p class="section-lead">
+                    The Social Media Macroscope grew out of collaboration between researchers and research software
+                    engineers. We welcome partners who want to use, adapt, or extend it.
+                </p>
+            </div>
 
-    <div class="marketing">
-        <div id="tools">
-            <h1>Discover the range of analytical tools we provide for social media</h1>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="inner-box">
-                        <img class="rounded-circle" src="images/smile-logo.png" alt="smile-logo" width="140"
-                             height="140">
-                        <h2>SOCIAL MEDIA INTELLIGENCE AND LEARNING ENVIRONMENT (SMILE)</h2>
-                        <p>One platform for social media data ingestion, analysis, and data sharing. SMILE collects real
-                            time and historical
-                            social media data from Twitter and Reddit, performs sentiment analysis, phrase mining,
-                            entity recognition, machine learning classification, network analysis and so on. You can
-                            share your
-                            computation result to <a href="https://clowder.smm.ncsa.illinois.edu/" target="_blank">Clowder</a>
-                            and sharing with your collaborators.
-                            <br>At our playground, we provide a temporary space for your experimentation, where no data
-                            is stored beyond a day.</p>
-                        <a class="learn-more" href="https://smile.smm.ncsa.illinois.edu" target="_blank" role="button">Explore
-                            the Playground</a>
-                        <!--                <a class="learn-more" role="button">Host infrastructure upgrading until 09/16/2023</a>-->
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="inner-box">
-                        <img src="images/clowder-logo.png" alt="clowder-logo" width="140" height="140">
-                        <h2>SMM Clowder</h2>
-                        <p>Discover seamless data sharing and collaboration with SMILE's social media analytical tools.
-                            Our
-                            platform integrates with Clowder (SMM Clowder), a customizable data management framework
-                            used by
-                            renowned science gateways. With Clowder, you
-                            can easily share analysis outputs, visualize data, and manage access.
-                            <br>SMILE's user-friendly wizard allows you to effortlessly upload targeted analytics
-                            outputs to
-                            Clowder. You can also leverage Clowder's information extractor functionality for drawing
-                            quick insight
-                            of your data uploaded.</p>
-                        <a class="learn-more" href="https://clowder.smm.ncsa.illinois.edu/" target="_blank"
-                           role="button">Try it out</a>
-                        <!--                <a class="learn-more" role="button">Host infrastructure upgrading until 09/16/2023</a>-->
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="inner-box">
-                        <img class="rounded-circle" src="images/bae-logo.png" alt="bae-logo" width="140" height="140">
-                        <h2>BRAND ANALYTICS ENVIRONMENT (BAE)</h2>
-                        <p>BAE helps practitioners to gain insight into how individuals and groups may interact with
-                            brands and various organizations.
-                            BAE investigates the relationships between users of Twitter’s machine-learned personalities
-                            and a consumer brand’s machine-learned personalities.
-                            You may find an organization’s perfect “bae” through this tool.
-                        </p>
-                        <!--                <a class="learn-more" href="https://socialmediamacroscope.org/tools/bae" target="_blank" role="button">Learn More</a>-->
-                        <a class="learn-more" role="button">Coming Soon...</a>
-                    </div>
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-        </div>
+            <div class="opportunity-grid">
+                <article class="opportunity">
+                    <span class="opportunity-num">01</span>
+                    <h3>Research partnerships</h3>
+                    <p>Use the Macroscope's data collection and analysis pipeline in your own studies, or partner with
+                        us on research projects and proposals involving social media data.</p>
+                </article>
+                <article class="opportunity">
+                    <span class="opportunity-num">02</span>
+                    <h3>Institutional deployments</h3>
+                    <p>Bring SMILE to your lab, course, or institution on cloud or on-premises resources. We can help
+                        adapt the Docker Compose and Kubernetes setups to your environment.</p>
+                </article>
+                <article class="opportunity">
+                    <span class="opportunity-num">03</span>
+                    <h3>New analyses and data sources</h3>
+                    <p>Contribute new analysis methods, improve existing ones such as sentiment analysis and topic
+                        modeling, or add support for new social media platforms. Start with
+                        <a href="https://github.com/ncsa/standalone-smm-landing/wiki/Adding-a-New-Analysis-to-SMILE"
+                           target="_blank" rel="noopener">Adding a New Analysis to SMILE</a>.</p>
+                </article>
+                <article class="opportunity">
+                    <span class="opportunity-num">04</span>
+                    <h3>Integrations and community</h3>
+                    <p>Connect the Macroscope with other science gateways, data management systems, and analytics
+                        tools, and help define shared workflows for social media research.</p>
+                </article>
+            </div>
 
-        <div id="deployment">
-            <h1>Effortless On-Premises Deployment</h1>
-            <div class="row">
-                <div class="col-xl-5 col-lg-5 col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="images/docker-logos.png" alt="docker">
+            <div class="contact-panel">
+                <div>
+                    <h3>Interested in collaborating?</h3>
+                    <p>Tell us about your research interests or the infrastructure you have in mind, and we'll follow
+                        up.</p>
                 </div>
-                <div class="col-xl-7 col-lg-7 col-md-7">
-                    <div class="inner-box right">
-                        <p>
-                            Experience hassle-free deployment of our full stack of apps right on your own machine with
-                            ease.
-                            For deployment, SMILE leverages
-                            <a href="https://kubernetes.io/" target="_blank" class="normal-link">Kubernetes</a>,
-                            utilizing
-                            <a href="https://helm.sh/" target="_blank" class="normal-link">Helm charts</a> to define,
-                            install, and manage applications seamlessly. This integration simplifies the deployment and
-                            administration of complex applications through templating and version control. Each
-                            component of SMILE,
-                            such as the SMILE server,
-                            graphql data server, algorithms, and MinIO instance, is encapsulated as
-                            <a href="https://www.docker.com/" target="_blank" class="normal-link">Docker</a> containers
-                            and
-                            individually deployed within Kubernetes. This approach enables independent management of
-                            component
-                            activation, scaling, and storage configuration without causing disruptions. Furthermore, the
-                            internal
-                            networking system provided by Kubernetes enhances the overall security of the system.
-                            <br>
-                            For lightweight deployments where scalability is not a concern, SMILE also offers a Docker
-                            Compose
-                            setup option. This alternative provides a simpler learning curve and requires fewer
-                            resources compared
-                            to Kubernetes.
-                        </p>
-                        <p>Please refer to the following documentations for more information:
-                            <a href="https://opensource.ncsa.illinois.edu/confluence/display/SMM/Deploying+SMILE+with+Kubernetes+and+Helm+Chart"
-                               target="_blank" class="btn btn-default highlighted-link">
-                                Deploy SMILE with Kubernetes and Helm Chart
-                            </a>
-                            <br>
-                            <a href="https://opensource.ncsa.illinois.edu/confluence/display/SMM/Dockerize+SMILE+with+Docker-Compose"
-                               target="_blank" class="btn btn-default highlighted-link">
-                                Deploy SMILE with Docker Compose</a>
-                        </p>
-                        <p>Our docker images
-                            are published on <a href="https://hub.docker.com/" target="_blank" class="normal-link">Docker
-                                Hub</a>
-                            and available to the public. <a
-                                    href="https://hub.docker.com/orgs/socialmediamacroscope/repositories"
-                                    target="_blank" class="btn btn-default highlighted-link">
-                                Check it out</a></p>
-                    </div>
-                </div>
+                <a class="btn btn-primary" href="#contact">Contact us</a>
             </div>
         </div>
+    </section>
 
-        <div id="opensource">
-            <h1>Embracing Open Source</h1>
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12">
-                    <div class="inner-box">
-                        <p>Our project, built upon open-sourced libraries and algorithms, is fully open-sourced and
-                            appreciates any kind of community contribution. You are welcome to <a
-                                    href="https://docs.github.com/en/get-started/quickstart/fork-a-repo"
-                                    target="_blank" class="normal-link">fork</a> our repositories,
-                            <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue"
-                               target="_blank" class="normal-link">open issues</a> and
-                            <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request"
-                               target="_blank" class="normal-link">create pull requests</a> to any of the public
-                            repository.
-                            <br>
-                            Visit GitHub repositories:
-                            <a href="https://github.com/ncsa/standalone-smm-smile"
-                               target="_blank" class="btn btn-default highlighted-link">SMILE</a>
-                            <a href="https://github.com/ncsa/standalone-smm-smile-graphql"
-                               target="_blank" class="btn btn-default highlighted-link">SMILE Data Server</a>
-                            <a href="https://github.com/ncsa/smm-deployment"
-                               target="_blank" class="btn btn-default highlighted-link">SMILE Deployment</a>
-                            <a href="https://github.com/ncsa/standalone-smm-analytics" target="_blank"
-                               class="btn btn-default highlighted-link">Analytics Algorithms</a>
-                            <a href="https://github.com/ncsa/standalone-smm-landing" target="_blank"
-                               class="btn btn-default highlighted-link">Landing Page</a>
-                        </p>
+    <!-- PROJECTS -->
+    <section class="section section-muted" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Projects</p>
+                <h2>Research software</h2>
+                <p class="section-lead">The tools developed as part of the Social Media Macroscope.</p>
+            </div>
+
+            <div class="project-list">
+                <article class="project">
+                    <img class="project-logo" src="images/small-logo.png" alt="SMILE logo" width="64" height="64">
+                    <div class="project-body">
+                        <div class="project-title">
+                            <h3>Social Media Intelligence and Learning Environment (SMILE)</h3>
+                            <span class="status">Open source &middot; Self-hostable</span>
+                        </div>
                         <p>
-                            Cite our work below. Your citation will help us continue to provide and improve this
-                            platform:
-                            <br>
-                            <br>
-                            <a href="https://zenodo.org/records/10028454" target="_blank" class="normal-link">
-                                Wang, C., Kim, Y. W., Kooper, R., & Yun, J. (2023, October 30). SMILE: A User-Friendly
-                                Science Gateway for Social Media Research and Collaboration. Science Gateways 2023
-                                (SG23), Pittsburgh, PA. https://doi.org/10.5281/zenodo.10028454</a>
-                            <br>
-                            <br>
-                            <a href="https://ieeexplore.ieee.org/document/9041717" target="_blank" class="normal-link">
-                                Wang, C., Marini, L., Chin, C. L., Vance, N., Donelson, C., Meunier, P., & Yun, J.
-                                T.(2019, September).
-                                Social Media Intelligence and Learning Environment: an Open Source Framework for Social
-                                Media Data
-                                Collection, Analysis and Curation. In 2019 15th International Conference on eScience
-                                (eScience)
-                                (pp. 252-261). IEEE.</a>
-                            <br>
-                            <br>
-                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167739X19304443"
-                               target="_blank" class="normal-link">
-                                Yun, J. T., Vance, N., Wang, C., Marini, L., Troy, J., Donelson, C., Chin, C. L.,
-                                Henderson, M. D.
-                                (2019).The Social Media Macroscope: A science gateway for research using social media
-                                data. Future
-                                Generation Computer Systems. doi:10.1016/j.future.2019.10.029
-                            </a>
+                            One platform for social media data ingestion, analysis, and data sharing. SMILE collects
+                            real-time and historical social media data from Twitter, Reddit, and YouTube, and performs
+                            sentiment analysis, phrase mining, named entity recognition, topic modeling, machine
+                            learning classification, and network analysis. Results can be shared with collaborators
+                            through Clowder.
                         </p>
+                        <ul class="project-links">
+                            <li><a href="https://github.com/ncsa/standalone-smm-smile" target="_blank"
+                                   rel="noopener">Source code</a></li>
+                            <li><a href="https://github.com/ncsa/standalone-smm-landing/wiki" target="_blank"
+                                   rel="noopener">Documentation</a></li>
+                        </ul>
                     </div>
-                </div>
+                </article>
+
+                <article class="project">
+                    <img class="project-logo project-logo-plain" src="images/clowder-logo.png" alt="Clowder logo"
+                         width="64" height="64">
+                    <div class="project-body">
+                        <div class="project-title">
+                            <h3>SMM Clowder</h3>
+                            <span class="status">Open source &middot; Self-hostable</span>
+                        </div>
+                        <p>
+                            SMILE integrates with Clowder, a customizable data management framework used by science
+                            gateways, so analysis outputs can be shared, visualized, and access-controlled. SMILE's
+                            wizard uploads selected outputs to Clowder, where its extractors can provide quick insight
+                            into the uploaded data.
+                        </p>
+                        <ul class="project-links">
+                            <li><a href="https://clowderframework.org/" target="_blank" rel="noopener">Clowder
+                                project</a></li>
+                            <li><a href="https://github.com/ncsa/smm-deployment" target="_blank" rel="noopener">Deployment
+                                configuration</a></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <img class="project-logo" src="images/bae-logo.png" alt="BAE logo" width="64" height="64">
+                    <div class="project-body">
+                        <div class="project-title">
+                            <h3>Brand Analytics Environment (BAE)</h3>
+                            <span class="status status-legacy">Legacy</span>
+                        </div>
+                        <p>
+                            BAE helped practitioners understand how individuals and groups interact with brands and
+                            organizations by comparing the machine-learned personalities of Twitter users with those of
+                            consumer brands. It depended on IBM Watson Personality Insights, which has been retired,
+                            and is no longer offered.
+                        </p>
+                        <ul class="project-links">
+                            <li><a href="https://github.com/ncsa/smm-deployment/tree/develop/docker/bae"
+                                   target="_blank" rel="noopener">Archived configuration</a></li>
+                        </ul>
+                    </div>
+                </article>
             </div>
         </div>
+    </section>
 
-    </div><!-- /.container -->
+    <!-- DEPLOYMENT -->
+    <section class="section" id="deployment">
+        <div class="container two-col">
+            <div>
+                <p class="section-label">Self-host</p>
+                <h2>Run SMILE on your own infrastructure</h2>
+                <p>
+                    SMILE is packaged for on-premises and cloud deployment. Each component, including the SMILE
+                    server, the GraphQL data server, the analysis algorithms, and MinIO, runs as its own
+                    <a href="https://www.docker.com/" target="_blank" rel="noopener">Docker</a> container.
+                </p>
+                <p>
+                    On <a href="https://kubernetes.io/" target="_blank" rel="noopener">Kubernetes</a>, a
+                    <a href="https://helm.sh/" target="_blank" rel="noopener">Helm chart</a> lets you scale components
+                    and configure storage independently, and Kubernetes' internal networking keeps backing services
+                    off the public network. For lightweight deployments where scalability is not a concern, Docker
+                    Compose offers a simpler setup that needs fewer resources.
+                </p>
+            </div>
+
+            <ul class="doc-list">
+                <li>
+                    <a href="https://github.com/ncsa/standalone-smm-landing/wiki/Deploy-SMILE-on-Kubernetes-with-Helm"
+                       target="_blank" rel="noopener">
+                        <span class="doc-title">Deploy SMILE on Kubernetes with Helm</span>
+                        <span class="doc-desc">Recommended for production and shared deployments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ncsa/standalone-smm-landing/wiki/Run-SMILE-with-Docker-Compose"
+                       target="_blank" rel="noopener">
+                        <span class="doc-title">Run SMILE with Docker Compose</span>
+                        <span class="doc-desc">Lightweight, single-machine setup</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://hub.docker.com/orgs/socialmediamacroscope/repositories" target="_blank"
+                       rel="noopener">
+                        <span class="doc-title">Docker images</span>
+                        <span class="doc-desc">Prebuilt images published on Docker Hub</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- OPEN SOURCE -->
+    <section class="section section-muted" id="opensource">
+        <div class="container two-col">
+            <div>
+                <p class="section-label">Open source</p>
+                <h2>Code repositories</h2>
+                <p>
+                    The project is built on open-source libraries and algorithms and is itself fully open source. You
+                    are welcome to
+                    <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank"
+                       rel="noopener">fork</a> the repositories,
+                    <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue"
+                       target="_blank" rel="noopener">open issues</a>, and
+                    <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request"
+                       target="_blank" rel="noopener">submit pull requests</a>. See the
+                    <a href="https://github.com/ncsa/standalone-smm-landing/wiki/Contributing" target="_blank"
+                       rel="noopener">contributing guide</a> to get started.
+                </p>
+            </div>
+
+            <ul class="repo-list">
+                <li>
+                    <a href="https://github.com/ncsa/standalone-smm-smile" target="_blank" rel="noopener">
+                        <span class="repo-name">SMILE server</span>
+                        <span class="repo-path">ncsa/standalone-smm-smile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ncsa/standalone-smm-smile-graphql" target="_blank" rel="noopener">
+                        <span class="repo-name">SMILE data server (GraphQL)</span>
+                        <span class="repo-path">ncsa/standalone-smm-smile-graphql</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ncsa/standalone-smm-analytics" target="_blank" rel="noopener">
+                        <span class="repo-name">Analytics algorithms</span>
+                        <span class="repo-path">ncsa/standalone-smm-analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ncsa/smm-deployment" target="_blank" rel="noopener">
+                        <span class="repo-name">Deployment (Docker Compose and Helm)</span>
+                        <span class="repo-path">ncsa/smm-deployment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ncsa/standalone-smm-landing" target="_blank" rel="noopener">
+                        <span class="repo-name">Landing page and wiki</span>
+                        <span class="repo-path">ncsa/standalone-smm-landing</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
+        <div class="container narrow">
+            <p class="section-label">Publications</p>
+            <h2>Cite our work</h2>
+            <p class="section-lead-left">If the Social Media Macroscope supports your research, please cite the
+                following. Your citation helps us continue to maintain and improve the platform.</p>
+
+            <ol class="citation-list">
+                <li>
+                    Wang, C., Kim, Y. W., Kooper, R., &amp; Yun, J. (2023, October 30).
+                    <a href="https://zenodo.org/records/10028454" target="_blank" rel="noopener">SMILE: A
+                        User-Friendly Science Gateway for Social Media Research and Collaboration</a>.
+                    <em>Science Gateways 2023 (SG23)</em>, Pittsburgh, PA. https://doi.org/10.5281/zenodo.10028454
+                </li>
+                <li>
+                    Wang, C., Marini, L., Chin, C. L., Vance, N., Donelson, C., Meunier, P., &amp; Yun, J. T. (2019,
+                    September).
+                    <a href="https://ieeexplore.ieee.org/document/9041717" target="_blank" rel="noopener">Social Media
+                        Intelligence and Learning Environment: an Open Source Framework for Social Media Data
+                        Collection, Analysis and Curation</a>.
+                    In <em>2019 15th International Conference on eScience (eScience)</em> (pp. 252&ndash;261). IEEE.
+                </li>
+                <li>
+                    Yun, J. T., Vance, N., Wang, C., Marini, L., Troy, J., Donelson, C., Chin, C. L., &amp; Henderson,
+                    M. D. (2019).
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167739X19304443" target="_blank"
+                       rel="noopener">The Social Media Macroscope: A science gateway for research using social media
+                        data</a>.
+                    <em>Future Generation Computer Systems</em>. doi:10.1016/j.future.2019.10.029
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-muted" id="contact">
+        <div class="container two-col">
+            <div>
+                <p class="section-label">Contact</p>
+                <h2>Contact us</h2>
+                <p>
+                    To discuss a collaboration, a deployment at your institution, or a contribution to the project,
+                    write to the Social Media Macroscope team at the address below.
+                </p>
+                <p>It helps to include:</p>
+                <ul class="contact-checklist">
+                    <li>your name, institution, and role</li>
+                    <li>your research interests or the problem you want to address</li>
+                    <li>any infrastructure or data sources you have in mind</li>
+                </ul>
+            </div>
+
+            <div class="contact-card">
+                <span class="contact-card-label">Email</span>
+                <div class="contact-email-row">
+                    <span class="contact-email" id="contact-email">smm@lists.illinois.edu</span>
+                    <button class="btn btn-outline btn-sm copy-btn" type="button" data-copy="smm@lists.illinois.edu"
+                            hidden>Copy
+                    </button>
+                </div>
+                <p class="contact-card-note">
+                    Social Media Macroscope team<br>
+                    National Center for Supercomputing Applications<br>
+                    University of Illinois Urbana-Champaign
+                </p>
+            </div>
+        </div>
+    </section>
 </main>
-<!-- FOOTER -->
-<footer>
-    <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-4">
-            <div class="footer-left">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-3">
-                        <img src="images/small-logo.png" width="60" height="60"/>
-                    </div>
-                    <div class="col-xl-9 col-lg-9 col-md-9">
-                        <h4>Social Media Macroscope</h4>
-                        <p>&#169;<span id="current-year">2023</span> National Center for Supercomputing Applications,
-                            University of Illinois at
-                            Urbana-Champaign, All rights reserved</p>
-                    </div>
-                    <script>
-                        document.getElementById('current-year').textContent = new Date().getFullYear();
-                    </script>
-                </div>
-            </div>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a class="brand" href="#top">
+                <img src="images/small-logo.png" alt="" width="32" height="32">
+                <span>Social Media Macroscope</span>
+            </a>
+            <p>&copy; <span id="current-year">2023</span> National Center for Supercomputing Applications, University of
+                Illinois Urbana-Champaign. All rights reserved.</p>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-4">
-            <div class="footer-left">
-                <h4>Quick Links</h4>
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <li><a href="https://smile.smm.ncsa.illnois.edu" target="_blank">SMILE Playground</a></li>
-                        <li><a href="https://opensource.ncsa.illinois.edu/confluence/display/SMM/SMM+Deployment+Guide">Deployment
-                            Guide</a></li>
-                        <li><a href="https://opensource.ncsa.illinois.edu/confluence/display/SMM/Home" target="_blank">Documentations</a>
-                        </li>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <li><a href="https://ieeexplore.ieee.org/document/9041717" target="_blank">Publications</a></li>
-                        <li><a href="#opensource" target="_blank">Code Repositories</a></li>
-                        <li>
-                            <a href="https://opensource.ncsa.illinois.edu/confluence/display/SMM/Social+Media+Macroscope+FAQs"
-                               target="_blank">FAQs</a></li>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <h4>Documentation</h4>
+            <ul>
+                <li><a href="https://github.com/ncsa/standalone-smm-landing/wiki" target="_blank" rel="noopener">Wiki</a>
+                </li>
+                <li><a href="https://github.com/ncsa/standalone-smm-landing/wiki/FAQ" target="_blank"
+                       rel="noopener">FAQ</a></li>
+                <li><a href="https://github.com/ncsa/standalone-smm-landing/wiki/Run-SMILE-with-Docker-Compose"
+                       target="_blank" rel="noopener">Docker Compose</a></li>
+                <li><a href="https://github.com/ncsa/standalone-smm-landing/wiki/Deploy-SMILE-on-Kubernetes-with-Helm"
+                       target="_blank" rel="noopener">Kubernetes + Helm</a></li>
+                <li><a href="https://github.com/ncsa/standalone-smm-landing/wiki/Contributing" target="_blank"
+                       rel="noopener">Contributing</a></li>
+                <li><a href="https://github.com/ncsa/standalone-smm-landing/wiki/Adding-a-New-Analysis-to-SMILE"
+                       target="_blank" rel="noopener">Adding a New Analysis</a></li>
+            </ul>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-2">
-            <div class="footer-left">
-                <h4>Policies</h4>
-                <li><a href="https://smile.smm.ncsa.illinois.edu/privacy-policy" target="_blank">Privacy Policy</a></li>
-                <li><a href="https://www.vpaa.uillinois.edu/resources/terms_of_use" target="_blank">Term of Use</a></li>
-            </div>
+        <div>
+            <h4>Project</h4>
+            <ul>
+                <li><a href="#collaborate">Collaborate</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#opensource">Code repositories</a></li>
+            </ul>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-2">
-            <div class="footer-left">
-                <h4>Contact Us</h4>
-                <li><a href="mailto:smm@lists.illinois.edu" target="_blank">Contact Us</a></li>
-            </div>
+        <div>
+            <h4>Policies</h4>
+            <ul>
+                <li><a href="https://www.vpaa.uillinois.edu/resources/terms_of_use" target="_blank" rel="noopener">Terms
+                    of Use</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
         </div>
     </div>
 </footer>
+
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    (function () {
+        var toggle = document.querySelector('.nav-toggle');
+        var links = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', function () {
+            var open = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+        links.addEventListener('click', function (e) {
+            if (e.target.closest('a')) {
+                links.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        var copyBtn = document.querySelector('.copy-btn');
+        if (navigator.clipboard && window.isSecureContext) {
+            copyBtn.hidden = false;
+            copyBtn.addEventListener('click', function () {
+                navigator.clipboard.writeText(copyBtn.dataset.copy).then(function () {
+                    copyBtn.textContent = 'Copied';
+                    setTimeout(function () { copyBtn.textContent = 'Copy'; }, 2000);
+                });
+            });
+        }
+    })();
+</script>
 </body>
 </html>
